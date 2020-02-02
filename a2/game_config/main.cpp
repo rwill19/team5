@@ -13,6 +13,7 @@ int main() {
    bool fullscreen;
 
    // read Lua script to determine initial window size infomation
+   //create a new lua state
    lua_State *L = luaL_newstate();
    luaopen_base(L);
    luaopen_io(L);
